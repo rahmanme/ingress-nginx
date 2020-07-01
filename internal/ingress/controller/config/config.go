@@ -487,6 +487,10 @@ type Configuration struct {
 	// Default: false
 	ComputeFullForwardedFor bool `json:"compute-full-forwarded-for,omitempty"`
 
+	// Set header X-Forwarded-Port when Forwarded headers is enabled.
+	// Default: true
+	UseForwardedPort bool `json: "use-forwarded-port,omitempty"`
+	
 	// If the request does not have a request-id, should we generate a random value?
 	// Default: true
 	GenerateRequestID bool `json:"generate-request-id,omitempty"`
